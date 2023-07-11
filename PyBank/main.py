@@ -1,12 +1,12 @@
 import os
 import csv
-#csvpath = os.path.join("..", "Resources", "budget_data.csv")
+csvpath = os.path.join("..", "Resources", "budget_data.csv")
 monthcount = 0
 net_total = 0
 avg_change = 0
 inc = 0
 dec = 0
-with open("budget_data.csv") as csvfile:
+with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimeter = ',')
     print(csvreader)
     csv_header = next(csvreader)
